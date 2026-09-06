@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#define N 5
+
+void info_vett(int V[N], int* max, int* min, float* media);
+
+int main()
+{
+    int V[N];
+    int max, min;
+    float media;
+
+    for(int i=0; i<N; i++)
+    {
+        printf("Inserisci elemento %d: ", i+1);
+        scanf("%d", &V[i]);
+    }
+
+    info_vett(V, &max, &min, &media);
+
+    printf("\nMassimo: %d", max);
+    printf("\nMinimo: %d", min);
+    printf("\nMedia: %.2f", media);
+
+    return 0;
+}
+
+void info_vett(int V[N], int* max, int* min, float* media)
+{
+    int somma = 0;
+
+    *max = V[0];
+    *min = V[0];
+
+    for(int i=0; i<N; i++)
+    {
+        somma += V[i];
+
+        if(V[i] > *max)
+            *max = V[i];
+
+        if(V[i] < *min)
+            *min = V[i];
+    }
+
+    *media = (float)somma / N;
+}
