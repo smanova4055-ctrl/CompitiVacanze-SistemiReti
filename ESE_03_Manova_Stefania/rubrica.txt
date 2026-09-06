@@ -1,1 +1,6 @@
-
+Bianchi;Luca;M;Via Roma 12;3331234567;17
+Ferrero;Anna;F;Via Torino 5;3479876543;21
+Gallo;Marco;M;Via Cuneo 7;3281234567;34
+Manfredi;Giulia;F;Via Fossano 15;3409876543;16
+Rossi;Andrea;M;Via Milano 20;3337654321;25
+Verdi;Sara;F;Via Alba 9;3471239876;19
